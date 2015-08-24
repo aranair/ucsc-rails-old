@@ -5,12 +5,13 @@ class PostsController < ApplicationController
    
   # GET /posts
   def index
-    if params[:tag] && params[:tag].present? && params[:tag] != 'null'
-      @react_params = params[:tag]
-      @posts = Post.tagged_with(params[:tag]).order(created_at: :desc)
-    else
-     @posts = Post.all.order(created_at: :desc)
-    end
+    @posts = 
+      if params[:tag] && params[:tag].present? && params[:tag] != 'null'
+        @react_params = params[:tag]
+        Post.tagged_with(params[:tag])
+      else
+        Post.all
+      end.order(created_at: :desc)
   end
 
   # GET /posts/1

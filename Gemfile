@@ -14,6 +14,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'react-rails', '~> 1.0'
 gem 'devise'
 gem 'simple_form'
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
 
 gem 'sdoc', '~> 0.4.0', group: :doc
