@@ -10,12 +10,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-gem 'bootstrap-sass', '~> 3.3.5'
 gem 'react-rails', '~> 1.0'
 gem 'devise'
 gem 'simple_form'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
-
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -25,7 +23,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
-gem 'capistrano-rails', group: :development
+group :development do
+  gem 'capistrano-rails'
+  gem 'quiet_assets'
+end
 
 group :development, :test do
   gem 'pry'

@@ -1,11 +1,10 @@
 class PostsController < ApplicationController
- 
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-   
+
   # GET /posts
   def index
-    @posts = 
+    @posts =
       if params[:tag] && params[:tag].present? && params[:tag] != 'null'
         @react_params = params[:tag]
         Post.tagged_with(params[:tag])

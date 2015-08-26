@@ -1,6 +1,6 @@
 var PostsBox = React.createClass({
   getInitialState: function() {
-    return { data: [] };
+    return {data: []};
   },
   render: function() {
     return (
@@ -14,7 +14,6 @@ var PostsBox = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        console.log(data);
         this.setState({ data: data.posts });
       }.bind(this),
       error: function(xhr, status, err) {

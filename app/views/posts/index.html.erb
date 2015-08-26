@@ -1,8 +1,9 @@
-<% if notice.present? %>
-  <div class="alert alert-info alert-dismissable"><%= notice %>
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-</div>
-<% end %>
+<%= semantic_flash %>
+<%# <% if notice.present? %1> %>
+<%#   <div class="alert alert-info alert-dismissable"><%= notice %1> %>
+<%#   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> %>
+<%# </div> %>
+<%# <% end %1> %>
 <%= react_component('PostsBox', url: '/posts.json', react_params: @react_params) %>
 
 <%= link_to 'New Post', new_post_path %>

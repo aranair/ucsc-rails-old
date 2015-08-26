@@ -1,0 +1,10 @@
+- Where is the club?
+- What is the club about?
+- Social? or Competitive?
+- Frequency of play and home courts
+- simple club name
+- short info + pictures
+- NSL schedule + results
+- Mission
+- Coaching panel
+- Chat
