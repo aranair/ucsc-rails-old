@@ -23,6 +23,24 @@
   font-weight: 300;
 }
 
-.content-container {
-  height: 50vh;
+.masthead .angle-down-container {
+  font-size: 4em;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  margin: auto;
+  line-height: 1em;
+}
+
+.view-block {
+  height: 100vh;
+}
+
+.title-zone.title-sport .h1-like:before {
+  /* border: 2px solid #000; */
+  -webkit-border-image: -webkit-linear-gradient(left,#00aae7 0,#21dab0 100%);
+  -o-border-image: linear-gradient(to right,#00aae7 0,#21dab0 100%);
+  border-image: linear-gradient(to right,#00aae7 0,#21dab0 100%);
+  border-image-slice: 1;
+  border-radius: 50%;
 }
