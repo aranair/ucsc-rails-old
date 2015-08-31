@@ -3,19 +3,25 @@
   height: 400px;
 }
 
-.ui.segment:first-child {
+.parallax {
+  padding: 300px 0px;
+  background-position: 0 0;
+}
+
+.ui.segment.parallax-1 {
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     asset-url('willstropdarwish.jpg');
-  min-height:  100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 80vh;
 }
 
 .masthead h1.ui.header {
-  margin-top: 30vh;
+  margin-top: 15vh;
   font-size: 5em;
   font-weight: bold;
+  padding: 40px 0;
 }
 
 .masthead h2.ui.header {
@@ -30,6 +36,7 @@
   width: 100%;
   margin: auto;
   line-height: 1em;
+  color: white;
 }
 
 .view-block {
