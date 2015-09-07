@@ -1,0 +1,25 @@
+<div class="club-info--club-committee club-info--section">
+  <div class="ui one column centered padded grid">
+
+    <div class="column">
+      <div class="club-info--section-icons">
+        <i class="huge child icon"></i>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="club-committee--text">
+        <h2>Our Committee Members</h2>
+      </div>
+    </div>
+
+    <div class="club-committee--pictures row">
+      <% @committee_members.each do |name| %>
+        <div class="club-committee--picture-circle">
+          <%= name %>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>

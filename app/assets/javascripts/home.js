@@ -10,7 +10,7 @@ function initialize() {
 
 $(document).ready(function() {
   $('.ui.dropdown').dropdown();
-  google.maps.event.addDomListener(window, 'load', initialize);
+  // google.maps.event.addDomListener(window, 'load', initialize);
 
   var parallax = document.querySelectorAll(".parallax"),
       speed = 0.5;

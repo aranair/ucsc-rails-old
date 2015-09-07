@@ -1,3 +1,7 @@
+body {
+  color: #333;
+}
+
 #map {
   width: 500px;
   height: 400px;
@@ -9,12 +13,12 @@
 }
 
 .ui.segment.parallax-1 {
-  background-image: 
+  background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     asset-url('willstropdarwish.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 80vh;
+  height: 100vh;
 }
 
 .masthead h1.ui.header {
@@ -39,15 +43,51 @@
   color: white;
 }
 
-.view-block {
-  height: 100vh;
+.half-height-block {
 }
 
-.title-zone.title-sport .h1-like:before {
-  /* border: 2px solid #000; */
-  -webkit-border-image: -webkit-linear-gradient(left,#00aae7 0,#21dab0 100%);
-  -o-border-image: linear-gradient(to right,#00aae7 0,#21dab0 100%);
-  border-image: linear-gradient(to right,#00aae7 0,#21dab0 100%);
-  border-image-slice: 1;
-  border-radius: 50%;
+.three-quarter-height-block {
+}
+
+// Club Info Sections
+.club-info--section {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.club-location--text {
+  text-align: center;
+}
+
+.club-committee--text {
+  text-align: center;
+}
+
+.club-info--section-icons {
+  text-align: center;
+}
+
+.club-comittee--pictures {
+}
+
+.club-committee--picture-circle {
+  border-radius: 100px;
+  height: 150px;
+  width: 150px;
+  padding-top: 60px;
+  margin: 5px;
+  text-align: center;
+  display: block;
+  float: left;
+  color: white;
+  background: rgb(107, 137, 177);
+}
+
+.club-info--club-about-us {
+  padding-top: 10vh;
+}
+
+.club-about-us--text {
+  text-align: center;
+  font-size: 17px;
+  line-height: 29px;
 }
