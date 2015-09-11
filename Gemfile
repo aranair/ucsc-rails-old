@@ -14,6 +14,7 @@ gem 'react-rails', '~> 1.0'
 gem 'devise'
 gem 'simple_form'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'font-awesome-sass', '~> 4.4.0'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 

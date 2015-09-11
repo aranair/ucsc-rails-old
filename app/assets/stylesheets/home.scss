@@ -2,6 +2,11 @@ body {
   color: #333;
 }
 
+.header {
+  font-family: 'Lato', 'Helvetica Neue', 'Arial';
+  font-weight: 700;
+}
+
 #map {
   width: 500px;
   height: 400px;
@@ -12,7 +17,7 @@ body {
   background-position: 0 0;
 }
 
-.ui.segment.parallax-1 {
+.masthead.parallax-1 {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     asset-url('willstropdarwish.jpg');
@@ -21,14 +26,18 @@ body {
   height: 100vh;
 }
 
-.masthead h1.ui.header {
-  margin-top: 15vh;
-  font-size: 5em;
+.masthead-hero {
+  text-align: center;
+  color: white;
+}
+
+.masthead h1 {
+  font-size: 4em;
   font-weight: bold;
   padding: 40px 0;
 }
 
-.masthead h2.ui.header {
+.masthead h2 {
   font-size: 2em;
   font-weight: 300;
 }
@@ -50,9 +59,34 @@ body {
 }
 
 // Club Info Sections
-.club-info--section {
-  border-bottom: 1px solid #e7e7e7;
+
+.club-info--section-header {
+  font-family: 'Titillium Web';
+  font-weight: 600;
+  font-size: 2.3em;
+  line-height: 2.3em;
 }
+
+.club-info--section-sub-header {
+  font-family: 'Open Sans';
+  line-height: 1.7em;
+  margin-top: 30px;
+}
+
+.club-info--section {
+  text-align: center;
+  border-bottom: 1px solid #e7e7e7;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+
+  p {
+    font-family: 'Open Sans', 'Helvetica Neue', 'Arial';
+    font-weight: 400;
+    line-height: 2em;
+    font-size: 1.1em;
+  }
+}
+
 
 .club-location--text {
   text-align: center;
@@ -83,11 +117,9 @@ body {
 }
 
 .club-info--club-about-us {
-  padding-top: 10vh;
 }
 
 .club-about-us--text {
   text-align: center;
-  font-size: 17px;
   line-height: 29px;
 }

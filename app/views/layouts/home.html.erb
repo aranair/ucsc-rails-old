@@ -9,36 +9,31 @@
 </head>
 <body>
 
-  <div class="pusher">
+  <div class="container-fluid">
+    <div class="row masthead parallax parallax-1">
+      <%# <div class="ui container"> %>
+      <%#   <div class="ui large secondary inverted pointing menu"> %>
+      <%#     <a class="active item">Home</a> %>
+      <%#     <a class="item">UCSC News</a> %>
+      <%#     <a class="item">Coaching Panel</a> %>
 
-    <div class="ui vertical masthead center aligned segment parallax parallax-1">
-      <div class="ui container">
-        <div class="ui large secondary inverted pointing menu">
-          <a class="active item">Home</a>
-          <a class="item">UCSC News</a>
-          <a class="item">Coaching Panel</a>
+      <%#     <div class="ui right dropdown item"> %>
+      <%#       <div class="menu"> %>
+      <%#         <a class="item">Login</a> %>
+      <%#       </div> %>
+      <%#     </div> %>
+      <%#   </div> %>
+      <div class="masthead-hero">
+        <h1 class="masthead-hero--ucsc">United Condo Squash Club</h1>
+        <h2 class="masthead-hero--slogan">live and breathe squash</h2>
 
-          <div class="ui right dropdown item">
-            <%= semantic_icon :sidebar %>
-            <div class="menu">
-              <a class="item">Login</a>
-            </div>
-          </div>
+        <div class="angle-down-container">
+          <a href="#who" class="masthead--angle-down"><span class="glyphicon glyphicon-chevron-down"></span></a>
         </div>
-      </div>
-
-      <div class="ui container">
-        <h1 class="ui inverted header">United Condo Squash Club</h1>
-        <h2 class="ui inverted header">live and breathe squash</h2>
-      </div>
-
-      <div class="ui container angle-down-container">
-        <a href="#who" class="masthead--angle-down"><i class="angle down icon"></i></a>
       </div>
     </div>
 
     <%= yield %>
-
   </div>
 
 </body>
