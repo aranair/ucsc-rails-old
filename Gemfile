@@ -13,7 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'react-rails', '~> 1.0'
 gem 'devise'
 gem 'simple_form'
-gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
+gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
