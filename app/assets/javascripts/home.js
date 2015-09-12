@@ -7,10 +7,11 @@ function initialize() {
   var mapCanvas = document.getElementById('map');
   var map = new google.maps.Map(mapCanvas, mapOptions);
 }
+// google.maps.event.addDomListener(window, 'load', initialize);
 
 $(document).ready(function() {
   $('.ui.dropdown').dropdown();
-  // google.maps.event.addDomListener(window, 'load', initialize);
+  $('body').scrollspy({ target: '#home-top-navbar' })
 
   var parallax = document.querySelectorAll(".parallax"),
       speed = 0.5;
