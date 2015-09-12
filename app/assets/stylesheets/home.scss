@@ -61,7 +61,8 @@ h2.masthead-hero--slogan {
   margin-top: 15vh;
   width: 100%;
 
-  a { color: $offwhite; }
+  a { color: rgba(203, 197, 194, 0.3); }
+  a:hover { color: $offwhite; }
 }
 
 // Club Info Sections
