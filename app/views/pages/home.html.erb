@@ -1,13 +1,17 @@
-<div class="col-xs-12 club-info half-height-block">
-  <div class="row">
-    <%= render 'club_about_us' %>
+<div class="row">
+  <div class="col-xs-12 club-info">
+    <div class="row club-info--about-us club-info--section" id="about-us">
+      <%= render 'club_about_us' %>
+    </div>
+
+    <div class="club-info--club-location club-info--section row">
+      <%= render 'club_location' %>
+    </div>
+
+    <div class="row club-info--club-membership club-info--section">
+      <%= render 'club_membership' %>
+    </div>
+
+    <%= render 'club_contacts' %>
   </div>
-
-  <%= render 'club_location' %>
-
-  <div class="row">
-    <%= render 'club_membership' %>
-  </div>
-
-  <%= render 'club_contacts' %>
 </div>

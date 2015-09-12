@@ -1,5 +1,9 @@
+$darknavy: rgb(0, 40, 70);
+$offwhite: rgb(224, 220, 212);
+$darkorange: #EA8500;
+
 body {
-  color: #333;
+  color: $darknavy; 
 }
 
 .header {
@@ -18,11 +22,12 @@ body {
 }
 
 .masthead.parallax-1 {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    asset-url('willstropdarwish.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background-image:
+  //   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  //   asset-url('willstropdarwish.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  background-color: $darknavy;
   height: 100vh;
 }
 
@@ -31,34 +36,46 @@ body {
   color: white;
 }
 
-.masthead h1 {
-  font-size: 4em;
+h1.masthead-hero--ucsc {
+  font-size: 5em;
   font-weight: bold;
   padding: 40px 0;
 }
 
-.masthead h2 {
-  font-size: 2em;
+h2.masthead-hero--slogan {
+  font-size: 1em;
   font-weight: 300;
+  letter-spacing: 4px;
+  font-family: 'Raleway';
 }
 
 .masthead .angle-down-container {
   font-size: 4em;
   position: absolute;
-  bottom: 0px;
+  bottom: 50px;
   width: 100%;
-  margin: auto;
   line-height: 1em;
-  color: white;
-}
-
-.half-height-block {
-}
-
-.three-quarter-height-block {
 }
 
 // Club Info Sections
+
+.club-info--club-location {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    asset-url('yck.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $darknavy;
+  height: 70vh;
+  border-top: 1px solid $darknavy;
+  border-bottom: 1px solid $offwhite;
+}
+
+.club-location--overlay {
+  position: relative;
+  top: 50%;
+  margin-top: -20vh;
+}
 
 .club-info--section-header {
   font-family: 'Titillium Web';
@@ -67,17 +84,29 @@ body {
   line-height: 2.3em;
 }
 
+.club-location--section-header {
+  font-weight: 400;
+}
+
+.club-location--text {
+  margin-top: 40px;
+}
+
+
 .club-info--section-sub-header {
-  font-family: 'Open Sans';
+  font-weight: 500;
   line-height: 1.7em;
   margin-top: 30px;
+  font-family: 'Raleway';
+  letter-spacing: 2px;
+  font-weight: 300;
 }
 
 .club-info--section {
   text-align: center;
-  border-bottom: 1px solid #e7e7e7;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  border-bottom: 1px solid $offwhite;
+  padding-top: 15vh;
+  padding-bottom: 20vh;
 
   p {
     font-family: 'Open Sans', 'Helvetica Neue', 'Arial';
@@ -85,22 +114,6 @@ body {
     line-height: 2em;
     font-size: 1.1em;
   }
-}
-
-
-.club-location--text {
-  text-align: center;
-}
-
-.club-committee--text {
-  text-align: center;
-}
-
-.club-info--section-icons {
-  text-align: center;
-}
-
-.club-comittee--pictures {
 }
 
 .club-committee--picture-circle {
@@ -112,14 +125,26 @@ body {
   text-align: center;
   display: block;
   float: left;
-  color: white;
+  color: $offwhite;
   background: rgb(107, 137, 177);
 }
 
-.club-info--club-about-us {
+.club-info--about-us {
+  background-color: rgb(224, 220, 212);
+  padding-top: 15vh;
+  padding-bottom: 20vh;
 }
 
 .club-about-us--text {
   text-align: center;
   line-height: 29px;
+}
+
+.club-info--club-membership {
+  background: $darknavy;
+  color: $offwhite;
+
+  .club-info--section-sub-header {
+    color: $darkorange;
+  }
 }
