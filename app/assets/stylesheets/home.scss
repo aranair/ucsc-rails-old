@@ -141,7 +141,7 @@ h2.masthead-hero--slogan {
 }
 
 .club-info--about-us {
-  background-color: rgb(224, 220, 212);
+  background-color: $offwhite;
   padding-top: 15vh;
   padding-bottom: 20vh;
 }
@@ -158,4 +158,8 @@ h2.masthead-hero--slogan {
   .club-info--section-sub-header {
     color: $darkorange;
   }
+}
+
+.club-info--contact-us {
+  background-color: $offwhite;
 }
