@@ -29,7 +29,7 @@ body {
   // background-size: cover;
   // background-repeat: no-repeat;
   background-color: $darknavy;
-  height: 98vh;
+  height: 95vh;
 }
 
 .navbar {
@@ -45,6 +45,7 @@ h1.masthead-hero--ucsc {
   font-size: 5em;
   font-weight: bold;
   padding: 40px 0;
+  margin-top: -50px;
 }
 
 h2.masthead-hero--slogan {
@@ -57,7 +58,7 @@ h2.masthead-hero--slogan {
 
 .masthead .angle-down-container {
   font-size: 4em;
-  margin-top: 40vh;
+  margin-top: 15vh;
   width: 100%;
 
   a { color: $offwhite; }
