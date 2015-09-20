@@ -29,7 +29,7 @@ body {
   // background-size: cover;
   // background-repeat: no-repeat;
   background-color: $darknavy;
-  height: 95vh;
+  height: 98vh;
 }
 
 .navbar {
@@ -53,12 +53,13 @@ h2.masthead-hero--slogan {
   font-weight: 300;
   letter-spacing: 4px;
   font-family: 'Raleway', 'Helvetica Neue', 'Arial';
-  color: $offwhite;
+  color: $darkorange;
 }
 
 .masthead .angle-down-container {
+  position: absolute;
+  top: 80vh;
   font-size: 4em;
-  margin-top: 15vh;
   width: 100%;
 
   a { color: rgba(203, 197, 194, 0.3); }
@@ -66,38 +67,6 @@ h2.masthead-hero--slogan {
 }
 
 // Club Info Sections
-
-.club-info--club-location {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    asset-url('yck.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: $darknavy;
-  height: 70vh;
-  border-top: 1px solid $darknavy;
-  min-height: 580px;
-}
-
-.club-location--overlay {
-  position: relative;
-  top: 50%;
-  margin-top: -20vh;
-}
-
-.club-location--card {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-
-  h4.card-title {
-    font-family: 'Raleway', 'Helvetica Neue', 'Arial';
-    font-weight: 300;
-    letter-spacing: 1px;
-  }
-}
-
-.club-location--card-slf {
-  padding: 25px 0 35px 0 !important;
-}
 
 .club-info--section-header {
   font-family: 'Titillium Web', 'Helvetica Neue', 'Arial';
@@ -126,6 +95,42 @@ h2.masthead-hero--slogan {
     line-height: 2em;
     font-size: 1.1em;
   }
+}
+
+.club-info--club-location {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    asset-url('yck.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $darknavy;
+  height: 70vh;
+  border-top: 1px solid $darknavy;
+  min-height: 580px;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.club-location--overlay {
+  margin-top: -30px;
+}
+
+.club-location--section-header {
+  margin-top: 20px;
+}
+
+.club-location--card {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+
+  h4.card-title {
+    font-family: 'Raleway', 'Helvetica Neue', 'Arial';
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}
+
+.club-location--card-slf {
+  padding: 25px 0 35px 0 !important;
 }
 
 .club-committee--picture-circle {
