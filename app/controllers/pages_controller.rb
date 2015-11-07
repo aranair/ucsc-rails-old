@@ -1,5 +1,9 @@
 class PagesController < ApplicationController
   def home
+    render layout: 'home'
+  end
+
+  def coaching_panel
     @committee_members = [
       'Joseph Wong', 
       'Michael C.S. Tan', 
@@ -14,7 +18,5 @@ class PagesController < ApplicationController
       'Darryl Tan',
       'Bryan Tan'
     ]
-
-    render layout: 'home'
   end
 end

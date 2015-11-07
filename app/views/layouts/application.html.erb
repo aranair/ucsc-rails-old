@@ -6,13 +6,46 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-  <div class="pusher">
-    <div class="ui container">
-      <%= yield %>
-    </div>
+<body data-spy="scroll" data-target="home-top-navbar">
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-minimalist navbar-fixed-top bg-inverse">
+      <button class="hidden-lg-up pull-right navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar">
+        &#9776;
+      </button>
+      <div class="collapse navbar-toggleable-lg" id="top-navbar">
+        <ul class="nav navbar-nav navbar-miniamlist nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="/#masthead">UCSC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#club-location">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#club-membership">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#club-contact-us">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/coaching-panel">Coaching Panel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/committee">Committee</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/national-squash-league">National Squash League</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
+
+  <%= yield %>
 
 </body>
 </html>

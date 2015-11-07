@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/home'
+  get 'coaching-panel' => 'pages#coaching_panel'
 
   devise_for :users
   resources :posts

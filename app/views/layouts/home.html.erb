@@ -5,7 +5,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 
 <body data-spy="scroll" data-target="home-top-navbar">
@@ -13,7 +12,7 @@
   <nav class="navbar navbar-minimalist navbar-fixed-top" id="home-top-navbar">
     <ul class="nav navbar-nav navbar-miniamlist nav-pills" role="tablist">
       <li class="nav-item">
-        <a class="nav-link" href="#masthead">UCSC</a>
+        <a class="nav-link" href="/#masthead">UCSC</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about-us">About Us</a>
@@ -27,8 +26,17 @@
       <li class="nav-item">
         <a class="nav-link" href="#club-contact-us">Contact Us</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/coaching-panel">Coaching Panel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/committee">Committee</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/national-squash-league">National Squash League</a>
+      </li>
     </ul>
-    <button class="pull-right navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+    <button class="pull-right navbar-toggler" type="button" data-toggle="collapse" data-target="#home-top-navbar">
       &#9776;
     </button>
   </nav>
