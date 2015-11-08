@@ -1,6 +1,10 @@
 $darknavy: rgb(0, 40, 70);
 $offwhite: rgb(224, 220, 212);
 $darkorange: #EA8500;
+$darkbrown: rgba(119, 79, 23, 0.75);
+$greensea: #16a085;
+$pumpkin: #d35400;
+$sunflower: #f1c40f;
 
 body {
   color: $darknavy;
@@ -10,6 +14,10 @@ body {
 .header {
   font-family: 'Lato', 'Helvetica Neue', 'Arial';
   font-weight: 700;
+}
+
+p {
+  font-family: 'Open Sans';
 }
 
 #map {

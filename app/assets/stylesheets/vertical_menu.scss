@@ -1,21 +1,49 @@
-/* make sidebar nav vertical */ 
-@media (min-width: 768px) {
-  .sidebar-nav .navbar .navbar-collapse {
-    padding: 0;
-    max-height: none;
+@media (min-width: 34em) {
+}
+
+@media (min-width: 48em) {
+}
+ 
+@media (min-width: 62em) {
+}
+ 
+@media (min-width: 75em) {}
+
+@media (max-width: 75em) {
+  .large-navbar {
+    display:none;
   }
-  .sidebar-nav .navbar ul {
-    float: none;
+
+  .menu {
+    background-color: $sunflower;
+    left: -250px;  /* start off behind the scenes */
+    height: 100%;
+    position: fixed;
+    width: 250px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.2em;
   }
-  .sidebar-nav .navbar ul:not {
-    display: block;
+  .menu a {
+    color: $darknavy;
   }
-  .sidebar-nav .navbar li {
-    float: none;
-    display: block;
+}
+
+.menu-links {
+  background-color: $darknavy;
+}
+
+.menu-toggler {
+  background-color: $darknavy;
+  line-height: 54.5px;
+
+  span {
+    font-size: 1.5em;
+    color: $offwhite;
   }
-  .sidebar-nav .navbar li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
+}
+
+.menu--links {
+  margin-top: 55px;
 }

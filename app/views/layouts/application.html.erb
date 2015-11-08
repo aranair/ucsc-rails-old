@@ -8,14 +8,50 @@
 </head>
 
 <body data-spy="scroll" data-target="home-top-navbar">
-
   <div class="container-fluid">
-    <nav class="navbar navbar-minimalist navbar-fixed-top bg-inverse">
-      <button class="hidden-lg-up pull-right navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar">
-        &#9776;
-      </button>
-      <div class="collapse navbar-toggleable-lg" id="top-navbar">
-        <ul class="nav navbar-nav navbar-miniamlist nav-pills">
+    <div class="menu hidden-xl-up">
+      <div>
+        <button class="icon-close pull-right navbar-light navbar-toggler" type="button">
+          <span class="fa fa-times fa-inverse"></span>
+        </button>
+      </div>
+      <ul class="nav nav-pills nav-stacked menu--links">
+        <li class="nav-item">
+          <a class="nav-link" href="/#masthead">UCSC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#about-us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#club-location">Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#club-membership">Membership</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#club-contact-us">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/coaching-panel">Coaching Panel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/committee">Committee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/national-squash-league">National <br>Squash League</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 hidden-xl-up menu-toggler">
+        <button class="icon-menu navbar-toggler" type="button">
+          <span class="fa fa-bars fa-inverse"></span>
+        </button>
+      </div>
+
+      <nav class="large-navbar navbar navbar-minimalist navbar-fixed-top bg-inverse">
+        <ul class="nav navbar-nav navbar-minimalist nav-pills">
           <li class="nav-item">
             <a class="nav-link" href="/#masthead">UCSC</a>
           </li>
@@ -41,11 +77,11 @@
             <a class="nav-link" href="/national-squash-league">National Squash League</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+      <%= yield %>
+    </div>
   </div>
 
-  <%= yield %>
 
 </body>
 </html>
