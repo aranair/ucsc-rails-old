@@ -1,0 +1,51 @@
+.committee--container {
+  padding-top: 55px;
+  min-height: 100vh;
+  color: black;
+}
+
+@media (min-width: 34em) {}
+@media (min-width: 48em) {}
+@media (min-width: 62em) {}
+@media (min-width: 75em) {}
+
+.committee-member--image {
+  background: #e7e7e7;
+  height: 150px;
+  width: 150px;
+  background-image: asset-url('cotton.jpg');
+  background-size: contain;
+  border-radius: 75px;
+  border: 1px solid transparent;
+}
+
+.committee-member {
+  margin-bottom: 30px;
+}
+
+.committee-members {
+  margin-top: 40px;
+}
+
+@media (min-width: 34em) {
+  .committee-member-right-align {
+    .committee-member--image {
+      float: right;
+      margin-bottom: 10px;
+    }
+    .committee-member--introduction {
+      text-align: right;
+    }
+  }
+
+}
+
+@media (max-width: 34em) {
+  .committee-member--image {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    margin: auto;
+  }
+}
+

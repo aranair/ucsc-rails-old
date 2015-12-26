@@ -4,6 +4,10 @@ class PagesController < ApplicationController
   end
 
   def coaching_panel
+  end
+
+  def committee
+    @alignments = %w(left right)
     @committee_members = [
       'Joseph Wong', 
       'Michael C.S. Tan', 
@@ -13,7 +17,7 @@ class PagesController < ApplicationController
       'Tan Kah Hong',
       'Dave Phua',
       'Kelvin Kan',
-      'Mabel Low',
+      'Chubs Low - Mabel',
       'Boa Ho Man', 
       'Darryl Tan',
       'Bryan Tan'
