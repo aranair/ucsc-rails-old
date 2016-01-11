@@ -1,4 +1,5 @@
 var main = function() {
+  console.log('Copyrights Homan')
   /* Push the body and the nav over by 250px over */
   $('.icon-menu').click(function() {
     $('.menu').animate({
