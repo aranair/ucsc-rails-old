@@ -1,6 +1,8 @@
-<h1>Editing Post</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', posts_path %>
+<div class="container posts--container">
+  <div class="col-xs-12 col-md-offset-1 col-md-10 col-xl-offset-2 col-xl-8">
+    <%= render 'form' %>
+    <br>
+    <%= link_to 'Show', @post %> |
+    <%= link_to 'Back', posts_path %>
+  </div>
+</div>

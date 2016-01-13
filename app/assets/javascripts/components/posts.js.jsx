@@ -26,12 +26,12 @@ var PostsBox = React.createClass({
 var PostsList = React.createClass({
   render: function() {
     var postsList = this.props.data.map(function(a) {
-      return <Post path={a.path} title={a.title} time={a.created_at} />;
+      return <Post path={a.path} title={a.title} time={a.created_at} synopsis={a.synopsis}/>;
     });
     return (
-      <ul className="posts-list">
+      <div className="posts">
         {postsList}
-      </ul>
+      </div>
     );
   }
 });
@@ -39,12 +39,15 @@ var PostsList = React.createClass({
 var Post = React.createClass({
   render: function() {
     return (
-      <li className="post-list-item">
-        <a href={this.props.path} className="post-link">
-          <p className="post-title">{this.props.title}</p>
-          <p className="post-time muted">{this.props.time}</p>
-        </a>
-    </li>
+      <div className="posts--post-summary">
+        <h2 className="post-summary--post-title">
+          <a href={this.props.path} className="post-summary--post-link">
+            {this.props.title}
+          </a>
+          <p className="post-summary--post-time muted">{this.props.time}</p>
+        </h2>
+        <p className="post-summary--post-synopsis">{this.props.synopsis}</p>
+      </div>
     );
   }
 });
