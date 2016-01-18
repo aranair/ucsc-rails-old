@@ -30,5 +30,12 @@
     <li class="nav-item">
       <a class="nav-link" href="/news">NSL News</a>
     </li>
+    <li class="nav-item pull-right">
+      <% if user_signed_in? %>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "nav-link" %>
+      <% else %>
+        <%= link_to 'Login', new_user_session_path, class: "nav-link" %>
+      <% end %>
+    </li>
   </ul>
 </nav>

@@ -1,7 +1,16 @@
 <div class="container posts--container">
   <div class="col-xs-12 col-md-offset-1 col-md-10 col-xl-offset-2 col-xl-8">
 
-    <%= link_to 'New Post', new_post_path %>
+    <% if user_signed_in? %>
+      <div class="row new-post-btn--container">
+        <div class="col-xs-12">
+          <%= link_to new_post_path do %>
+            New Post
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
     <%# <%= react_component('PostsBox', url: '/posts.json', react_params: @react_params) %1> %>
 
     <div class="posts">
@@ -22,11 +31,6 @@
             </p> 
             <br>
           </div>
-          <%# <% if user_signed_in? %1> %>
-          <%#   <a href=<%= edit_article_path(article) %1> class="article-list-edit"> %>
-          <%#     <span>Edit</span> %>
-          <%#   </a> %>
-          <%# <% end %1> %>
         </div>
       <% end %>
     </div>

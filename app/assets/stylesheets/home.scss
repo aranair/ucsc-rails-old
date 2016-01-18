@@ -177,3 +177,14 @@ h2.masthead-hero--slogan {
 .club-info--contact-us {
   background-color: $offwhite;
 }
+
+@media (max-width: 48em) {
+  .club-info--club-location {
+    padding-top: 0;
+  }
+
+  .club-location--overlay {
+    margin-top: 0;
+  }
+}
+@media (min-width: 48em) {}

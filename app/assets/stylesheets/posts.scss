@@ -1,7 +1,21 @@
 .posts--container {
-  padding-top: 75px;
+  padding-top: 55px;
   min-height: 100vh;
   color: #444;
+}
+
+.new-post-btn--container {
+  margin-bottom: 15px;
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  padding: 15px 0px;
+}
+
+.edit-post-btn--container {
+  margin-bottom: 15px;
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  padding: 15px 0px;
 }
 
 .posts--post-summary {
