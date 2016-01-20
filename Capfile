@@ -1,9 +1,11 @@
-# Load DSL and set up stages
+# Load DSL and Setup Up Stages
 require 'capistrano/setup'
-
-# Include default deployment tasks
 require 'capistrano/deploy'
+
 require 'capistrano/rails'
+require 'capistrano/bundler'
+require 'capistrano/rvm'
+require 'capistrano/puma'
 
 # Include tasks from other gems included in your Gemfile
 #
