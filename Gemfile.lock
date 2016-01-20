@@ -231,6 +231,7 @@ DEPENDENCIES
   jquery-rails
   pg
   pry
+  puma
   pygments.rb (~> 0.5.4)
   quiet_assets
   rails (= 4.2.3)

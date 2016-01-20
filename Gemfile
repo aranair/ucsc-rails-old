@@ -17,6 +17,7 @@ gem 'redcarpet'
 gem 'pygments.rb', '~> 0.5.4'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'puma'
 
 # gem 'therubyracer', platforms: :ruby
 #

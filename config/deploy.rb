@@ -1,6 +1,3 @@
-# Change these
-server '128.199.231.243', roles: [:web, :app, :db], primary: true
-
 set :application, 'ucsc'
 set :repo_url, 'git@github.com:aranair/ucsc.git'
 set :user,            'deploy'
