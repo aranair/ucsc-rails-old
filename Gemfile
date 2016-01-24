@@ -18,6 +18,8 @@ gem 'pygments.rb', '~> 0.5.4'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
+gem 'cancancan'
+gem 'rolify'
 
 gem 'therubyracer', platforms: :ruby
 #
@@ -34,6 +36,7 @@ group :development do
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
   gem 'quiet_assets'
+  gem 'seed_dump'
 end
 
 group :development, :test do

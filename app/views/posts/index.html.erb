@@ -1,7 +1,7 @@
 <div class="container posts--container">
   <div class="col-xs-12 col-md-offset-1 col-md-10 col-xl-offset-2 col-xl-8">
 
-    <% if user_signed_in? %>
+    <% if user_signed_in? && current_user.has_role?(:admin) %>
       <div class="row new-post-btn--container">
         <div class="col-xs-12">
           <%= link_to new_post_path do %>

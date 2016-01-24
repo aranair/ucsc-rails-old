@@ -3,9 +3,7 @@
 
     <div class="row new-post-btn--container">
       <div class="col-xs-12">
-        <% if user_signed_in? %>
-          <%= link_to 'Show', @post %> |
-        <% end %>
+        <%= link_to 'Show', @post %> |
         <%= link_to 'Back', posts_path %>
       </div>
     </div>

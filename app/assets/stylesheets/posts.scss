@@ -23,7 +23,7 @@
   border-bottom: 1px solid;
   border-color: rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
-  
+  margin-top: 30px;
 }
 
 a.post-summary--post-link {
@@ -49,7 +49,6 @@ a.post-summary--post-link:hover {
 }
 
 .post-summary--post-synopsis {
-
   p {
     font-size: 1.1em;
     font-weight: 300;
@@ -58,8 +57,7 @@ a.post-summary--post-link:hover {
   }
 
   h1, h2, h3, h4, h5 {
-    font-size: 1.1em;
-    font-weight: normal;
+    font-weight: lighter;
   }
 }
 

@@ -3,7 +3,7 @@ class Post < ActiveRecord::Base
   # default_scope :order=>'created_at DESC'
   has_many :taggings
   has_many :tags, through: :taggings
-
+  
   def to_param
     "#{id} #{title}".parameterize
   end

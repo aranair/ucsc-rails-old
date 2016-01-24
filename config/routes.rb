@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :members
   get 'coaching-panel' => 'pages#coaching_panel'
   get 'committee' => 'pages#committee'
   get 'news' => 'posts#index'

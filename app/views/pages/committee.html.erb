@@ -2,22 +2,24 @@
   <div class="col-xs-12 col-md-offset-1 col-md-10 col-xl-offset-2 col-xl-8">
 
     <div class="row">
-      <h1 class="page-main-header">Committee Members</h1>
+      <h1 class="page-main-header">Our Committee</h1>
     </div>
 
     <div class="committee-members">
       <% @committee_members.each_with_index do |committee_member, index| %>
         <% align = @alignments[index % 2]%>
 
-        <div class="row committee-member committee-member-<%= align %>-align">
-          <div class="col-xs-12 col-md-3 pull-<%= align %>">
-            <div class="committee-member--image">
-            </div>
+        <div class="row committee-member">
+          <div class="col-xs-12 col-md-3">
+            <%= image_tag("#{committee_member.image_link}.jpg", width: '130', class: "committee-member--image") %>
           </div>
           <div class="col-xs-12 col-md-9 pull-<%= @alignments[index % 2 - 1] %>">
-            <div class="committee-member--introduction">
-              <%# Hi, I am Cotton poo ball. I am UCSC's Mascot. My omma is in the committee too as our second mascot; her name is Chubs Mani! %>
-Reinforcement learning is the problem of getting an agent to act in the world so as to maximize its rewards. For example, consider teaching a dog a new trick: you cannot tell it what to do, but you can reward/punish it if it does the right/wrong thing. It has to figure out what it did that made it get the reward/punishment, which is known as the credit assignment problem. We can use a similar method to train computers to do many tasks, such as playing backgammon or chess, scheduling jobs, and controlling robot limbs.
+            <div class="committee-member--block">
+              <p class="committee-member--name"><%= committee_member.name %></p>
+              <p class="committee-member--position"><%= committee_member.position %></p>
+              <p class="committee-member--intro">
+                <%= committee_member.intro %>
+              </p>
             </div>
           </div>
         </div>

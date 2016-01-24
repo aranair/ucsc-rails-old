@@ -10,3 +10,8 @@
 @import 'navbar_minimalist';
 @import 'vertical_menu';
 @import 'devise';
+
+@media (max-width: 34em) { html { font-size: 14px; } }
+@media (max-width: 48em) { html { font-size: 16px; } }
+@media (max-width: 62em) { html { font-size: 18px; } }
+@media (max-width: 75em) { html { font-size: 20px; } }
