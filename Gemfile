@@ -11,7 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'react-rails', '~> 1.0'
 gem 'devise'
 gem 'simple_form'
-gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'font-awesome-sass', '~> 4.4.0'
 gem 'redcarpet'
 gem 'pygments.rb', '~> 0.5.4'
@@ -28,6 +28,10 @@ gem 'therubyracer', platforms: :ruby
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
 
 group :development do
   gem 'capistrano',         require: false
