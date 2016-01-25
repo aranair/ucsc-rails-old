@@ -112,7 +112,6 @@ h2.masthead-hero--slogan {
   background-size: cover;
   background-repeat: no-repeat;
   color: $darknavy;
-  height: 70vh;
   border-top: 1px solid $darknavy;
   min-height: 580px;
   padding-top: 20vh;
@@ -186,5 +185,17 @@ h2.masthead-hero--slogan {
   .club-location--overlay {
     margin-top: 0;
   }
+
+  h1.masthead-hero--ucsc {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 40px 0;
+    margin-top: -250px;
+  }
+
+  h2.masthead-hero--slogan {
+    font-size: 0.8em;
+  }
 }
+
 @media (min-width: 48em) {}

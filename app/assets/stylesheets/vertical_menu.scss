@@ -1,18 +1,23 @@
 @media (max-width: 75em) {
   .large-navbar {
-    display:none;
+    display: none;
   }
 
   .menu {
     background-color: $sunflower;
-    left: -250px;  /* start off behind the scenes */
     height: 100%;
-    position: fixed;
     width: 250px;
     text-align: center;
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 1.2em;
+    position: fixed;
+    left: -250px;  /* start off behind the scenes */
+    bottom: 0;
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   .menu a {
     color: $darknavy;
@@ -25,6 +30,9 @@
 
 .menu-toggler {
   background-color: $darknavy;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
 
   span {
     font-size: 1.5em;
@@ -36,8 +44,8 @@
   margin-top: 55px;
 }
 
-@media (max-width: 34em) { .menu-toggler { span { font-size: 2.5em } } }
-@media (max-width: 48em) { .menu-toggler { span { font-size: 2.5em } } }
-@media (max-width: 62em) { .menu-toggler { span { font-size: 2em } } }
-@media (max-width: 75em) {}
+// @media (max-width: 34em) { .menu-toggler { span { font-size: 3em } } }
+// @media (max-width: 48em) { .menu-toggler { span { font-size: 3em } } }
+// @media (max-width: 62em) { .menu-toggler { span { font-size: 3em } } }
+// @media (max-width: 75em) {}
 
