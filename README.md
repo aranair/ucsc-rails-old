@@ -1,5 +1,5 @@
 ## UCSC Community Site
 
-Built on Rails + React
+Built on Rails.
 
-Copyrights 2015.
+Copyrights 2016, Boa Ho Man
