@@ -37,9 +37,9 @@ a.post-summary--post-link:hover {
 }
 
 .post-summary--post-title {
-  font-family: 'Lato';
-  line-height: 1.4em;
-  font-weight: bold;
+  font-family: 'Quicksand';
+  line-height: 1.5em;
+  font-weight: 400;
 }
 
 .post-summary--post-time {
@@ -50,7 +50,8 @@ a.post-summary--post-link:hover {
 
 .post-summary--post-synopsis {
   p {
-    font-size: 1.1em;
+    font-family: 'Lato';
+    font-size: 1.3em;
     font-weight: 300;
     line-height: 1.8em;
     margin-bottom: 20px;
