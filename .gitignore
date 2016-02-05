@@ -17,4 +17,5 @@
 /tmp
 
 config/*.yml
+!config/users.yml
 !config/secrets.yml
