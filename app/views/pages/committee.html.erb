@@ -11,15 +11,21 @@
 
         <div class="row committee-member">
           <div class="col-xs-12 col-md-3">
-            <%= image_tag("#{committee_member.image_link}.jpg", width: '130', class: "committee-member--image") %>
+            <div class="row committee-member--small-image-holder">
+              <div class="col-xs-6 col-md-12">
+                <%= image_tag("#{committee_member.image_link}.jpg", width: '130', class: "committee-member--image") %>
+              </div>
+              <div class="hidden-md-up col-xs-6">
+                <p class="committee-member--name"><%= committee_member.name %></p>
+                <p class="committee-member--position"><%= committee_member.position %></p>
+              </div>
+            </div>
           </div>
           <div class="col-xs-12 col-md-9 pull-<%= @alignments[index % 2 - 1] %>">
             <div class="committee-member--block">
-              <p class="committee-member--name"><%= committee_member.name %></p>
-              <p class="committee-member--position"><%= committee_member.position %></p>
-              <p class="committee-member--intro">
-                <%= committee_member.intro %>
-              </p>
+              <p class="hidden-md-down committee-member--name"><%= committee_member.name %></p>
+              <p class="hidden-md-down committee-member--position"><%= committee_member.position %></p>
+              <p class="committee-member--intro"><%= committee_member.intro %></p>
             </div>
           </div>
         </div>

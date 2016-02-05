@@ -7,7 +7,7 @@
 .committee-member--image {
   border: 1px solid #e7e7e7;
   padding: 5px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .committee-member {
@@ -44,7 +44,20 @@
 
 @media (max-width: 34em) {
   .committee-member--image {
-    float: none;
+    margin-top: none;
+  }
+
+  .committee-member--small-image-holder {
+    margin-bottom: 15px;
+  }
+
+  .committee-member--name {
+    font-size: 1.4em;
+    margin-top: 20%;
+  }
+
+  .committee-member--intro {
+    font-size: 1.1em;
   }
 }
 
