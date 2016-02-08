@@ -25,6 +25,33 @@ p {
 //   background-position: 0 0;
 // }
 
+@media (max-width: 48em) {
+  .club-info--club-location {
+    padding-top: 0;
+  }
+
+  .club-location--overlay {
+    margin-top: 0;
+  }
+
+  h1.masthead-hero--ucsc {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 40px 0;
+    margin-top: -250px;
+  }
+
+  h2.masthead-hero--slogan {
+    font-size: 0.8em;
+  }
+
+  .masthead.parallax-1 {
+    background-color: $darknavy;
+    height: 85vh;
+    padding-top: 400px;
+  }
+}
+
 .masthead.parallax-1 {
   // background-image:
   //   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -226,33 +253,6 @@ h2.masthead-hero--slogan {
 
   a:hover {
     color: $darknavy;
-  }
-}
-
-@media (max-width: 48em) {
-  .club-info--club-location {
-    padding-top: 0;
-  }
-
-  .club-location--overlay {
-    margin-top: 0;
-  }
-
-  h1.masthead-hero--ucsc {
-    font-size: 3em;
-    font-weight: bold;
-    padding: 40px 0;
-    margin-top: -250px;
-  }
-
-  h2.masthead-hero--slogan {
-    font-size: 0.8em;
-  }
-
-  .masthead.parallax-1 {
-    background-color: $darknavy;
-    height: 85vh;
-    padding-top: 400px;
   }
 }
 
