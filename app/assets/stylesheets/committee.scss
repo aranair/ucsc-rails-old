@@ -1,14 +1,4 @@
 @media (min-width: 34em) {
-  .committee-member-right-align {
-    .committee-member--image {
-      float: right;
-      margin-bottom: 10px;
-    }
-    .committee-member--introduction {
-      text-align: right;
-    }
-  }
-
 }
 
 @media (max-width: 33em) {
@@ -26,8 +16,18 @@
   }
 
   .committee-member--intro {
-    font-size: 1.1em;
+    font-size: 1em;
   }
+}
+
+@media (max-width: 70em) {
+  font-size: 1em;
+}
+
+.committee-member--intro{
+  font-size: 1.2em;
+  font-weight: 300;
+  font-family: 'Lato';
 }
 
 .committee--container {
