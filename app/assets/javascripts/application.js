@@ -17,5 +17,6 @@
 //= require turbolinks
 //= require react
 //= require react_ujs
+//= require menu
 //= require components
 //= require_tree .
