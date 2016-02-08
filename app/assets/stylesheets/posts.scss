@@ -69,14 +69,8 @@ a.post-summary--post-link:hover {
   color: #444;
 }
 
-p.post--content {
-  color: #333;
-  font-weight: 300;
-  font-size: 1.2em;
-  line-height: 1.8em;
-}
-
 h1.post--title {
+  font-weight: 700;
   font-size: 2.6em;
   padding-bottom: 11.5px;
   margin: 50px 0 25px;
@@ -90,16 +84,23 @@ h1.post--title {
 }
 
 .post--content {
-  font-family: 'Open Sans', 'Helvetica Neue', 'Arial';
+  font-family: 'Lato', 'Helvetica Neue', 'Arial';
 
   p {
-    font-size: 1.1em;
+    color: $darknavy;
+    font-size: 1.3em;
     font-weight: 300;
     line-height: 1.8em;
     margin-bottom: 20px;
   }
 
-  h1, h2, h3, h4, h5 {
-    font-family: 'Raleway';
+//   h1, h2, h3, h4, h5 {
+//     font-family: 'Quicksand';
+//   }
+}
+
+@media (max-width: 34em) {
+  h1.post--title {
+    font-size: 2em;
   }
 }
