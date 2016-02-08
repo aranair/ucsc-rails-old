@@ -85,6 +85,7 @@ h1.post--title {
 
 .post--content {
   font-family: 'Lato', 'Helvetica Neue', 'Arial';
+  padding: 0px 10px 0px 25px;
 
   p {
     color: $darknavy;
@@ -100,7 +101,16 @@ h1.post--title {
 }
 
 @media (max-width: 34em) {
+  .post--content {
+    padding: 0px;
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+
   h1.post--title {
     font-size: 2em;
   }
 }
+
