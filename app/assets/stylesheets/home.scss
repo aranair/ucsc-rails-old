@@ -230,6 +230,12 @@ h2.masthead-hero--slogan {
   h2.masthead-hero--slogan {
     font-size: 0.8em;
   }
+
+  .masthead.parallax-1 {
+    background-color: $darknavy;
+    height: 85vh;
+    padding-top: 400px;
+  }
 }
 
 @media (min-width: 48em) {}
