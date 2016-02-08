@@ -20,24 +20,20 @@ p {
   font-family: 'Lato';
 }
 
-#map {
-  width: 500px;
-  height: 400px;
-}
-
-.parallax {
-  padding: 300px 0px;
-  background-position: 0 0;
-}
+// .parallax {
+//   padding: 300px 0px;
+//   background-position: 0 0;
+// }
 
 .masthead.parallax-1 {
   // background-image:
   //   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  //   asset-url('willstropdarwish.jpg');
+  //   asset-url('ucsc.jpg');
   // background-size: cover;
   // background-repeat: no-repeat;
   background-color: $darknavy;
-  height: 98vh;
+  height: 70vh;
+  padding-top: 300px;
 }
 
 .navbar {
@@ -52,7 +48,8 @@ p {
 h1.masthead-hero--ucsc {
   font-size: 5em;
   font-weight: bold;
-  padding: 40px 0;
+  padding: 0;
+  padding-bottom: 20px;
   margin-top: -50px;
 }
 
@@ -64,15 +61,52 @@ h2.masthead-hero--slogan {
   color: $darkorange;
 }
 
-.masthead .angle-down-container {
-  position: absolute;
-  top: 80vh;
+.masthead-links-container {
+  color: rgba(203, 197, 194, 0.6);
+  background-color: rgba(224,220,212,0.70);
+  padding: 25px 0px 25px 0px;
+}
+
+.masthead-links--sponsors {
+  p {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Lato';
+    font-weight: 100;
+    color: $darknavy;
+  }
+}
+
+.sponsors--sponsored-by {
+  margin-top: 40px;
+}
+
+.sponsors--gene-ethics {
+  background-image: asset-url('gene-ethics.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 13px;
+  height: 110px;
+  background-position-x: 50%;
+}
+
+.sponsors--indusnri {
+  background-image: asset-url('indusnri.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+  background-position-x: 50%;
+}
+
+.masthead-links--angle-down {
   font-size: 4em;
-  width: 100%;
+  text-align: center;
+  background-color: $darknavy;
 
   a { color: rgba(203, 197, 194, 0.3); }
   a:hover { color: $offwhite; }
 }
+
 
 // Club Info Sections
 

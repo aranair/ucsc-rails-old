@@ -24,6 +24,16 @@
   margin-top: 55px;
 }
 
+a.nav-link--home {
+  font-weight: 700 !important;
+  font-family: Lato;
+  font-size: 1.4em;
+}
+
+.nav-pills--others {
+  line-height: 2.3em;
+}
+
 @media (max-width: 75em) {
   .full-menu {
     visibility: hidden;
