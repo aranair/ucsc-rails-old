@@ -1,34 +1,3 @@
-.committee--container {
-  padding-top: 55px;
-  min-height: 100vh;
-  color: black;
-}
-
-.committee-member--image {
-  border: 1px solid #e7e7e7;
-  padding: 5px;
-  margin-top: 15px;
-}
-
-.committee-member {
-  margin-bottom: 35px;
-}
-
-.committee-member--name {
-  font-weight: bold;
-  color: #333;
-  font-size: 1.5em;
-  margin-bottom: 0;
-}
-
-.committee-member--position {
-  font-family: 'Raleway';
-}
-
-.committee-members {
-  margin-top: 40px;
-}
-
 @media (min-width: 34em) {
   .committee-member-right-align {
     .committee-member--image {
@@ -61,3 +30,33 @@
   }
 }
 
+.committee--container {
+  padding-top: 55px;
+  min-height: 100vh;
+  color: black;
+}
+
+.committee-member--image {
+  border: 1px solid #e7e7e7;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.committee-member {
+  margin-bottom: 35px;
+}
+
+.committee-member--name {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.committee-member--position {
+  font-family: 'Raleway';
+}
+
+.committee-members {
+  margin-top: 40px;
+}
