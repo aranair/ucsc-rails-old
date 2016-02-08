@@ -209,6 +209,24 @@ h2.masthead-hero--slogan {
 
 .club-info--contact-us {
   background-color: $offwhite;
+  color: $darknavy;
+}
+
+.club-info--social {
+  a {
+    color: rgba(181, 175, 164, 0.60);
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  a:hover {
+    color: $darknavy;
+  }
 }
 
 @media (max-width: 48em) {
