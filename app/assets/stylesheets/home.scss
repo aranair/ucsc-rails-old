@@ -20,11 +20,6 @@ p {
   font-family: 'Lato';
 }
 
-// .parallax {
-//   padding: 300px 0px;
-//   background-position: 0 0;
-// }
-
 @media (max-width: 48em) {
   .club-info--club-location {
     padding-top: 0;
@@ -53,11 +48,6 @@ p {
 }
 
 .masthead.parallax-1 {
-  // background-image:
-  //   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  //   asset-url('ucsc.jpg');
-  // background-size: cover;
-  // background-repeat: no-repeat;
   background-color: $darknavy;
   height: 76vh;
   padding-top: 300px;
