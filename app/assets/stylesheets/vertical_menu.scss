@@ -26,6 +26,24 @@
 
 @media (max-width: 75em) {
   .full-menu {
+    visibility: hidden;
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: $darknavy;
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    z-index: 1;
+  }
+
+  .full-menu {
     .nav-pills .nav-link {
       display: block;
       padding: 0.5em 1em;
