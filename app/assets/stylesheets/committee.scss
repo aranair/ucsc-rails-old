@@ -1,29 +1,3 @@
-@media (min-width: 34em) {
-}
-
-@media (max-width: 33em) {
-  .committee-member--image {
-    margin-top: none;
-  }
-
-  .committee-member--small-image-holder {
-    margin-bottom: 15px;
-  }
-
-  .committee-member--name {
-    font-size: 1.4em;
-    margin-top: 20%;
-  }
-
-  .committee-member--intro {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 70em) {
-  font-size: 1em;
-}
-
 .committee-member--intro{
   font-size: 1.2em;
   font-weight: 300;
@@ -60,3 +34,27 @@
 .committee-members {
   margin-top: 40px;
 }
+
+@media (max-width: 33em) {
+  .committee-member--image {
+    margin-top: none;
+  }
+
+  .committee-member--small-image-holder {
+    margin-bottom: 15px;
+  }
+
+  .committee-member--name {
+    font-size: 1.4em;
+    margin-top: 20%;
+  }
+
+  .committee-member--intro {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 70em) {
+  font-size: 1em;
+}
+

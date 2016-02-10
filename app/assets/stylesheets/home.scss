@@ -20,33 +20,6 @@ p {
   font-family: 'Lato';
 }
 
-@media (max-width: 48em) {
-  .club-info--club-location {
-    padding-top: 0;
-  }
-
-  .club-location--overlay {
-    margin-top: 0;
-  }
-
-  h1.masthead-hero--ucsc {
-    font-size: 3em;
-    font-weight: bold;
-    padding: 40px 0;
-    margin-top: -250px;
-  }
-
-  h2.masthead-hero--slogan {
-    font-size: 0.8em;
-  }
-
-  .masthead.parallax-1 {
-    background-color: $darknavy;
-    height: 84vh;
-    padding-top: 400px;
-  }
-}
-
 .masthead.parallax-1 {
   background-color: $darknavy;
   height: 76vh;
@@ -124,8 +97,32 @@ h2.masthead-hero--slogan {
   a:hover { color: $offwhite; }
 }
 
+@media (max-width: 48em) {
+  .club-info--club-location {
+    padding-top: 0;
+  }
 
-// Club Info Sections
+  .club-location--overlay {
+    margin-top: 0;
+  }
+
+  h1.masthead-hero--ucsc {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 40px 0;
+    margin-top: -250px;
+  }
+
+  h2.masthead-hero--slogan {
+    font-size: 0.8em;
+  }
+
+  .masthead.parallax-1 {
+    background-color: $darknavy;
+    height: 84vh;
+    padding-top: 400px;
+  }
+}
 
 .club-info--section-header {
   font-family: 'Quicksand', 'Helvetica Neue', 'Arial';
@@ -245,5 +242,3 @@ h2.masthead-hero--slogan {
     color: $darknavy;
   }
 }
-
-@media (min-width: 48em) {}
