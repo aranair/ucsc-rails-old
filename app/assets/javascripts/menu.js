@@ -1,6 +1,7 @@
 var bindMenu = function() {
   $('.icon-menu').click(moveMenu);
   $('.icon-close').click(moveMenu);
+  $('.full-menu li a').click(closeMenu);
 };
 
 var moveMenu = function() {
