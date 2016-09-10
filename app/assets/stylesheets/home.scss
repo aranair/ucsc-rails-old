@@ -20,10 +20,17 @@ p {
   font-family: 'Lato';
 }
 
+div.masthead-container {
+  background: linear-gradient(rgba(0, 40, 70, 1), rgba(0, 40, 70, 0.7)), image-url('banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .masthead.parallax-1 {
-  background-color: $darknavy;
+  // background-color: $darknavy;
+  background-color: transparent;
   height: 76vh;
-  padding-top: 300px;
+  padding-top: 250px;
 }
 
 .navbar {
@@ -92,12 +99,18 @@ h2.masthead-hero--slogan {
   font-size: 4em;
   text-align: center;
   background-color: $darknavy;
+  background-color: transparent;
 
   a { color: rgba(203, 197, 194, 0.3); }
   a:hover { color: $offwhite; }
 }
 
 @media (max-width: 48em) {
+
+  div.masthead-container {
+    background: $darknavy;
+  }
+
   .club-info--club-location {
     padding-top: 0;
   }
@@ -118,7 +131,6 @@ h2.masthead-hero--slogan {
   }
 
   .masthead.parallax-1 {
-    background-color: $darknavy;
     height: 84vh;
     padding-top: 400px;
   }
