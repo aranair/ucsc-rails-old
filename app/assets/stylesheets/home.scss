@@ -60,11 +60,12 @@ h2.masthead-hero--slogan {
 
 .masthead-links-container {
   color: rgba(203, 197, 194, 0.6);
-  background-color: rgba(224,220,212,0.70);
+  background-color: rgba(255, 255, 255, .5);
   padding: 25px 0px 25px 0px;
 }
 
 .masthead-links--sponsors {
+  background-color: rgba(255, 255, 255, .5);
   p {
     text-align: center;
     font-size: 1.5em;
@@ -89,6 +90,14 @@ h2.masthead-hero--slogan {
 
 .sponsors--indusnri {
   background-image: asset-url('indusnri.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 120px;
+  background-position-x: 50%;
+}
+
+.sponsors--orchard-physio {
+  background-image: asset-url('orchard-physio.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 120px;
@@ -133,6 +142,10 @@ h2.masthead-hero--slogan {
   .masthead.parallax-1 {
     height: 84vh;
     padding-top: 400px;
+  }
+
+  .sponsors--orchard-physio {
+    margin-bottom: 25px;
   }
 }
 
@@ -179,7 +192,6 @@ h2.masthead-hero--slogan {
 }
 
 .club-location--overlay {
-  margin-top: -30px;
 }
 
 .club-location--section-header {
